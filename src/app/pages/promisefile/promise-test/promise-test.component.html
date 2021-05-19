@@ -1,0 +1,7 @@
+<div>
+    <div *ngFor="let item of consoleLogData;let i=index">
+        <div class="contentClass" [ngClass]="{'aaaaClass':item.id%2==0}">
+            时间：{{ item.date | date:"yyyy/MM/dd hh:mm:ss" }}： {{item.content}}
+        </div>
+    </div>
+</div>
